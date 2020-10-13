@@ -1,12 +1,18 @@
-<div class="row">
-<div class="col-sm-4 p-3 shadow-lg">
 <div class="card">
-<img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3SSI6R5bTRY-x3h1wQIFCpRm-Q47xEkxhdQ&usqp=CAU"/>
-<div class="card-body p-2">
-<h1>{{Property.Name}}</h1>
-<h1>{{Property.Type}}</h1>
-<h1>{{Property.Price}}</h1>
-</div>
-</div>
-</div>
+  <div class="card-image-wraper">
+    <img class="card-img-top"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3SSI6R5bTRY-x3h1wQIFCpRm-Q47xEkxhdQ&usqp=CAU"
+     />
+     <ul class="list-inline text-center member-icons animate">
+       <li class="list-inline-item"><button class="btn btn-primary"><i class="far fa-edit"></i></button></li>
+       <li class="list-inline-item"><button class="btn btn-primary"><i class="far fa-address-book"></i></button></li>
+     </ul>
+  </div>
+  <div class="card-body p-2">
+    <h1>{{ property_detail.Name }}</h1>
+    <h2>{{ property_detail.Type }}</h2>
+    <h3>{{ property_detail.Price }}</h3>
+    <!-- <h1>{{ property_name }}</h1> -->
+
+  </div>
 </div>
